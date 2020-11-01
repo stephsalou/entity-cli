@@ -4,10 +4,10 @@ const mongooseCli = require("./core/modules/mongoose/cli/index");
 const boxen = require("boxen");
 const chalk = require("chalk");
 
-export const cli = () => {
+const cli = () => {
   const config = getConfigFile();
 
-  const version = "1.0.14";
+  const version = "1.1.0";
   const orm = config && config.orm ? config.orm : "typeorm";
   const language = config && config.lang ? config.lang : "Ts";
 
@@ -44,3 +44,7 @@ export const cli = () => {
     typeOrmCli();
   }
 };
+
+module.exports  = {
+  cli
+}
