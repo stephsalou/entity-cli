@@ -14,6 +14,7 @@ const {
   relativeModuleDirectory,
   rootDir,
 } = require("./constants");
+const chalk = require("chalk");
 
 class BaseEntityManager {
   static get directory() {

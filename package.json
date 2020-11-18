@@ -14,7 +14,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "testing": "node test.js"
+    "testing": "node test.js",
+    "entity-cli": "node ./node_modules/entity-cli/index.js"
   },
   "author": {
     "name": "Marc-Henry Nanguy",
